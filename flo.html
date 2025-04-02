@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/5f469e5ab5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>FLO 클론 앱</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div data-include="header.html"></div>
+    <header class="container">
+      <h1 class="work-detail__title">FLO</h1>
+      <p>동아리 스터디 프로젝트</p>
+    </header>
+    <!--스크린샷-->
+    <section class="screenshots container section-detail" id="screenshots">
+      <div class="screenshots__container container">
+        <div class="screenshots__images">
+        <img class="screenshots__img" src="images/work/flo/flo_home.jpg" />
+        <img class="screenshots__img" src="images/work/flo/flo_song.png" />
+        <img class="screenshots__img" src="images/work/flo/flo_like.jpg" />
+        <img class="screenshots__img" src="images/work/flo/flo_album.jpg" />
+        <img class="screenshots__img" src="images/work/flo/flo_library.jpg" />
+        <img class="screenshots__img" src="images/work/flo/flo_signup.jpg" />
+        <img class="screenshots__img" src="images/work/flo/flo_login.jpg" />
+      </div>
+      </div>
+    </section>
+    <!-- 제목 -->
+    <section class="subtitle container section-detail">
+        <h1>음악 스트리밍 서비스 FLO를 클론코딩한 앱</h1>
+        <p>2024.04 ~ 2024.06</p>
+    </section>
+    <!--개요-->
+    <section class="overview container section-detail">
+      <div class="overview__data">
+      <p>
+        <h3 class="overview__subtitle">Overview</h3>
+        디자인 요구사항을 반영하고, 안드로이드 앱 화면을 스스로 구성하는 법을 익히기 위해 제작
+      </p>
+    </div>
+    </section>
+    <!--사용 기술-->
+    <section class="skills container section-detail">
+      <p>
+        <h3 class="skills__subtitle">Skills</h3>
+        디자인 패턴: MVC, 어댑터
+        <br /><br />
+        DB: RoomDB, JWT 토큰
+        <br /><br />
+        UI/UX: MediaPlayer, TabLayout, ViewPager, CircleIndicator
+      </p>
+    </section>
+    <!-- 이슈 -->
+    <section class="issue container section-detail">
+      <p>
+        <h3 class="issue__subtitle">Result & Issues</h3>
+        - MediaPlayer와 Thread를 사용해서 음악 재생 및 일시중지
+        <br /><br />
+        - JWT 토큰으로 회원가입과 로그인 구현
+        <br /><br />
+        - RoomDB로 앨범 및 음악 데이터를 관리하여 좋아요 기능 구현
+      </p>
+    </section>
+    <!-- 이전 버튼 -->
+    <section class="container section-detail">
+      <button class="prev-button button" onclick="location.href='my-experience.html'">이전</button>
+    </section>
+    <!-- 다음 버튼 -->
+    <section class="container section-detail">
+      <button class="next-button button" onclick="location.href='cammate.html'">다음</button>
+    </section>
+    <!-- footer -->
+    <div data-include="footer.html"></div>
+  </body>
+</html>

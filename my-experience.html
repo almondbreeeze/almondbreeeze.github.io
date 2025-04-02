@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/5f469e5ab5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>My Experience</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div data-include="header.html"></div>
+    <header class="container">
+      <h1 class="work-detail__title">My Experience</h1>
+      <p>부트캠프 팀 프로젝트 (BE3 AOS2)</p>
+    </header>
+    <!--스크린샷-->
+    <section class="screenshots container section-detail" id="screenshots">
+      <div class="screenshots__container container">
+        <div class="screenshots__images">
+        <img class="screenshots__img" src="images/work/my-experience-signup.png" />
+        <img class="screenshots__img" src="images/work/my-experience_signin.png" />
+        <img class="screenshots__img" src="images/work/my-experience_home.jpg" />
+        <img class="screenshots__img" src="images/work/my-experience_detail.jpg" />
+        <img class="screenshots__img" src="images/work/my-experience_reserv.jpg" />
+        <img class="screenshots__img" src="images/work/my-experience-notice.png" />
+        <img class="screenshots__img" src="images/work/my-experience-mypage.png" />
+        <img class="screenshots__img" src="images/work/my-experience-joined-programm.png" />
+      </div>
+      </div>
+    </section>
+    <!-- 제목 -->
+    <section class="subtitle container section-detail">
+        <h1>주행 연습 프로그램을 예약할 수 있는 앱</h1>
+        <p>2024.02 ~ 2024.03</p>
+    </section>
+    <!--개요-->
+    <section class="overview container section-detail">
+      <div class="overview__data">
+      <p>
+        <h3 class="overview__subtitle">Overview</h3>
+        웹사이트는 존재하지만 앱이 없는 서비스를 위한 앱을 제작
+      </p>
+    </div>
+    </section>
+    <!--사용 기술-->
+    <section class="skills container section-detail">
+      <p>
+        <h3 class="skills__subtitle">Skills</h3>
+        클린 아키텍처: MVVM
+        <br /><br />
+        의존성 주입: Hilt
+        <br /><br />
+        배포: Firebase App Distribution, Fastlane
+        <br /><br />
+        통신 라이브러리: Socket, Retrofit, Okhttp, kotlinx-serialization, Coil
+        <br /><br />
+        UI/UX: VideoView, RecyclerView, TextInputLayout
+      </p>
+    </section>
+    <!-- 이슈 -->
+    <section class="issue container section-detail">
+      <p>
+        <h3 class="issue__subtitle">Result & Issues</h3>
+        [기술]
+        <br /><br />
+        - MVVM 패턴에 Hilt 의존성 주입 사용
+        <br /><br />
+        - TCP Socket 통신과 Corutine Flow를 사용하여 대기열 구현
+        <br /><br />
+        <img class="my-ex-issue__img" src="images/work/my-experience_socket.png" />
+        <br /><br />
+        [코드 재사용성 및 효율]
+        <br /><br />
+        - Mapper 함수를 만들어 MVVM 패턴을 체계적으로 구현
+        <br /><br />
+        - 공통 상단 toolbar를 포함한 화면은 BaseActivity에 공통 코드를 작성하여 상속받도록 하여 코드 구현 속도를 단축
+        <br /><br />
+        [UI/UX 개선]
+        <br /><br />
+        - 다이얼로그와 드롭다운을 커스터마이즈하여 UI 개선
+        <br /><br />
+        - 툴팁을 추가하여 사용자에게 도움말을 제공하고 UX를 향상시킴 (오픈소스 라이브러리 활용)
+        <br /><br />
+        <img class="my-ex-issue__img" src="images/work/my-experience_ux.png" />
+        <br /><br />
+        [배포 및 협업]
+        <br /><br />
+        - 협업을 통해 코드리뷰를 반영하고 코드를 지속적으로 개선
+        <br /><br />
+        - Firebase App Distribution과 Fastlane을 사용하여 테스트 앱 배포를 자동화
+        <br /><br />
+        - Firebase Crashlytics를 활용해 오류 발생 확인
+        <br /><br />
+        <img class="my-ex-issue__img" src="images/work/my-experience_crashlytics.png" />
+      </p>
+    </section>
+    <!-- 이전 버튼 -->
+    <section class="container section-detail">
+      <button class="prev-button button" onclick="location.href='slide-app.html'">이전</button>
+    </section>
+    <!-- 다음 버튼 -->
+    <section class="container section-detail">
+      <button class="next-button button" onclick="location.href='flo.html'">다음</button>
+    </section>
+    <!-- footer -->
+    <div data-include="footer.html"></div>
+  </body>
+</html>

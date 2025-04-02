@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/5f469e5ab5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>Slide-App</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div data-include="header.html"></div>
+    <header class="container">
+      <h1 class="work-detail__title">Slide-App</h1>
+      <p>개인 프로젝트 (부트캠프 과정)</p>
+    </header>
+    <!--스크린샷-->
+    <section class="screenshots container section-detail" id="screenshots">
+      <div class="screenshots__container container">
+        <img class="screenshots__img" src="images/work/slide-app.jpg" />
+        <img class="screenshots__img" src="images/work/slide-app1.jpg" />
+      </div>
+    </section>
+    <!-- 제목 -->
+    <section class="subtitle container section-detail">
+        <h1>정사각형 슬라이드를 추가할 수 있는 앱</h1>
+        <p>2024.01 ~ 2024.02</p>
+    </section>
+    <!--개요-->
+    <section class="overview container section-detail">
+      <div class="overview__data">
+      <p>
+        <h3 class="overview__subtitle">Overview</h3>
+        ConstraintLayout과 DataBinding을 사용하는 이유를 학습하기 위해 제작
+      </p>
+    </div>
+    </section>
+    <!--사용 기술-->
+    <section class="skills container section-detail">
+      <p>
+        <h3 class="skills__subtitle">Skills</h3>
+        RecyclerView, DataBinding, Retrofit, ViewModel, Livedata
+      </p>
+    </section>
+    <!-- 이슈 -->
+    <section class="issue container section-detail">
+      <p>
+        <h3 class="issue__subtitle">Result & Issues</h3>
+        - 추가 버튼을 길게 누르면 서버에서 json 데이터를 가져와서 슬라이드 추가.
+        <br /><br />
+        - UI 상태와 관련된 코드를 ViewModel에서 관리하도록 함.
+        <br /><br />
+        - Binding Adapter를 사용해서 코드 가독성과 재사용성을 향상한 경험.
+      </p>
+    </section>
+    <!-- 다음 버튼 -->
+    <section class="container section-detail">
+      <button class="next-button button" onclick="location.href='my-experience.html'">다음</button>
+    </section>
+    <!-- footer -->
+    <div data-include="footer.html"></div>
+  </body>
+</html>

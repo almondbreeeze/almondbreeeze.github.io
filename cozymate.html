@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/5f469e5ab5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>cozymate</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div data-include="header.html"></div>
+    <header class="container">
+      <h1 class="work-detail__title">cozymate</h1>
+      <p>동아리 팀 프로젝트 (PM1 BE4 AOS3 iOS2)</p>
+    </header>
+    <!--스크린샷-->
+    <section class="screenshots container section-detail" id="screenshots">
+      <div class="screenshots__container container">
+        <div class="screenshots__images">
+        <img class="screenshots__img" src="images/work/cammate/cammate_randomnickname.png" />
+        <img class="screenshots__img" src="images/work/cammate/cammmate_findroom.png" />
+        <img class="screenshots__img" src="images/work/cammate/cammate_enterroom.png" />
+        <img class="screenshots__img" src="images/work/cammate/cammate_cam.jpg" />
+      </div>
+      </div>
+    </section>
+    <!-- 제목 -->
+    <section class="subtitle container section-detail">
+        <h1>기숙사 룸메이트를 구할 수 있는 앱</h1>
+        <p>2024.07 ~ 현재</p>
+    </section>
+    <!--개요-->
+    <section class="overview container section-detail">
+      <div class="overview__data">
+      <p>
+        <h3 class="overview__subtitle">Overview</h3>
+        편안한 기숙사 생활을 위해 나와 맞는 룸메이트를 탐색할 수 있도록 제작
+        <br /><br />
+        출시 링크(apple store / google playstore)
+      </p>
+    </div>
+    </section>
+    <!--사용 기술-->
+    <section class="skills container section-detail">
+      <p>
+        <h3 class="skills__subtitle">Skills</h3>
+        클린 아키텍처: MVVM
+        <br /><br />
+        의존성 주입: Hilt
+        <br /><br />
+        통신 라이브러리: Retrofit, Okhttp
+        <br /><br />
+        UI/UX: SwipeRefreshLayot, BottomNavigation, SearchView
+      </p>
+    </section>
+    <!-- 이슈 -->
+    <section class="issue container section-detail">
+      <p>
+        <h3 class="issue__subtitle">Result & Issues</h3>
+        [협업 문화]
+        <br /><br />
+        - Figma, Jira, Discord, Notion 등 다양한 협업 툴을 활용해 커뮤니케이션 및 작업
+        <br /><br />
+        - iOS와 협업: 권장 디자인에 어쩌구 하기위해, 플랫폼 별 차이 이해 , 뭘 했더라라 (컴포넌트처럼 만들기)
+        <br /><br />
+        - 워크스루를 통해 개선 (spf)
+        <br /><br />
+        [담당 기능 및 기술]
+        <br /><br />
+        - Kakao SDK를 활용해 로그인 (OAuth 방식에서 -> grant 어쩌구로 개선하여 보안 강화화)
+        <br /><br />
+        - 스플래시 화면 (lottie 애니메이션 도입)
+        <br /><br />
+        - MVVM 패턴에 Hilt 의존성 주입 사용
+        <br /><br />
+        - 방 생성 및 방 참여 기능 
+        <br /><br />
+        - 온보딩 화면 (학교 인증)
+        <br /><br />
+        [지속적인 개선]
+        <br /><br />
+        - coroutine으로 닉네임 방이름 중복체크 (api 호출 최소화)      
+        <br /><br />
+        - 홈 화면 개선 및 복잡한 ui를 구현하기 위해 컴포넌트화
+        <br /><br />
+        - ux 개선을 위한 새로고침 화면 도입 (동적으로 반영하기 위함)
+        <br /><br />
+        - 오류 처리 (중복 검사, 네트워크 오류 등등)
+        <br /><br />
+        - 개선하기 위해 스플래시 화면에서 자동 로그인
+        <br /><br />
+        - 자동 업데이트
+        <img class="my-ex-issue__img" src="images/work/cammate/cammate_randomutil.png" />
+        <br /><br />
+      </p>
+    </section>
+    <!-- 이전 버튼 -->
+    <section class="container section-detail">
+      <button class="next-button button" onclick="location.href='cammate.html'">이전</button>
+    </section>
+    <!-- footer -->
+    <div data-include="footer.html"></div>
+  </body>
+</html>

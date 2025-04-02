@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/5f469e5ab5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>Cammate</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div data-include="header.html"></div>
+    <header class="container">
+      <h1 class="work-detail__title">Cammate</h1>
+      <p>졸업 팀 프로젝트 (BE1 AOS2)</p>
+    </header>
+    <!--스크린샷-->
+    <section class="screenshots container section-detail" id="screenshots">
+      <div class="screenshots__container container">
+        <div class="screenshots__images">
+        <img class="screenshots__img" src="images/work/cammate/cammate_randomnickname.png" />
+        <img class="screenshots__img" src="images/work/cammate/cammmate_findroom.png" />
+        <img class="screenshots__img" src="images/work/cammate/cammate_enterroom.png" />
+        <img class="screenshots__img" src="images/work/cammate/cammate_chatting.gif" />
+        <img class="screenshots__img" src="images/work/cammate/cammate_cam.jpg" />
+      </div>
+      </div>
+    </section>
+    <!-- 제목 -->
+    <section class="subtitle container section-detail">
+        <h1>화면 공유로 편리하게 사진을 찍을 수 있는 앱</h1>
+        <p>2024.04 ~ 2024.06</p>
+    </section>
+    <!--개요-->
+    <section class="overview container section-detail">
+      <div class="overview__data">
+      <p>
+        <h3 class="overview__subtitle">Overview</h3>
+        사진 찍는 구도를 실시간으로 확인하기 위하여 제작
+      </p>
+    </div>
+    </section>
+    <!--사용 기술-->
+    <section class="skills container section-detail">
+      <p>
+        <h3 class="skills__subtitle">Skills</h3>
+        클린 아키텍처: MVVM
+        <br /><br />
+        의존성 주입: Hilt
+        <br /><br />
+        통신 라이브러리: WebRTC, Socket, BluetoothAPI, Retrofit, Okhttp
+        <br /><br />
+        UI/UX: Jetpack navigation, RecyclerView, TabLayout
+      </p>
+    </section>
+    <!-- 이슈 -->
+    <section class="issue container section-detail">
+      <p>
+        <h3 class="issue__subtitle">Result & Issues</h3>
+        [아키텍쳐]
+        <br /><br />
+        <img class="my-ex-issue__img" src="images/work/cammate/cammate_architecture.png" />
+        <br /><br />
+        - MVVM 패턴에 Hilt 의존성 주입 사용
+        <br /><br />
+        - WebRTC 기술을 활용해 화면 공유 (STUN&TURN 서버로 방화벽 문제 해결)
+        <br /><br />
+        - Bluetooth 기술로 근거리 방 찾기
+        <br /><br />
+        - Socket 기반 채팅 구현 (+ node.js 서버 구현)
+        <br /><br />
+        [기획 및 UI/UX]
+        <br /><br />
+        - Figma를 사용해 디자인 및 기획
+        <br /><br />
+        - 랜덤 닉네임을 부여하여 사용자 경험 향상
+        <br /><br />
+        <img class="my-ex-issue__img" src="images/work/cammate/cammate_randomutil.png" />
+        <br /><br />
+      </p>
+    </section>
+    <!-- 이전 버튼 -->
+    <section class="container section-detail">
+      <button class="prev-button button" onclick="location.href='flo.html'">이전</button>
+    </section>
+    <!-- 다음 버튼 -->
+    <section class="container section-detail">
+      <button class="next-button button" onclick="location.href='cozymate.html'">다음</button>
+    </section>
+    <!-- footer -->
+    <div data-include="footer.html"></div>
+  </body>
+</html>

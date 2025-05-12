@@ -31,9 +31,14 @@
         <img class="screenshots__img" src="images/work/cozymate/cozymate_splash.jpg" />
         <img class="screenshots__img" src="images/work/cozymate/cozymate_onboarding1.jpg" />
         <img class="screenshots__img" src="images/work/cozymate/cozymate_onboarding3.jpg" />
+        <img class="screenshots__img" src="images/work/cozymate/cozymate_lifestyle_essential.jpg" />
+        <img class="screenshots__img" src="images/work/cozymate/cozymate_home_skeleton.jpg" />
         <img class="screenshots__img" src="images/work/cozymate/cozymate_home1.jpg" />
         <img class="screenshots__img" src="images/work/cozymate/cozymate_home2.jpg" />
+        <img class="screenshots__img" src="images/work/cozymate/cozymate_room_info.jpg" />
+        <img class="screenshots__img" src="images/work/cozymate/cozymate_room_popup.jpg" />
         <img class="screenshots__img" src="images/work/cozymate/cozymate_room1.jpg" />
+        <img class="screenshots__img" src="images/work/cozymate/cozymate_room_detail.jpg" />
       </div>
       </div>
     </section>
@@ -49,7 +54,7 @@
         <h3 class="overview__subtitle">Overview</h3>
         편안한 기숙사 생활을 위해 나와 맞는 룸메이트를 탐색할 수 있도록 제작
         <br /><br />
-        출시 링크(apple store / google playstore)
+        출시 링크 (apple store / google playstore)
       </p>
     </div>
     </section>
@@ -63,46 +68,41 @@
         <br /><br />
         통신 라이브러리: Retrofit, Okhttp
         <br /><br />
-        UI/UX: SwipeRefreshLayot, BottomNavigation, SearchView
+        비동기 처리: Coroutine (Debounce)
+        <br /><br />
+        UI/UX: SwipeRefreshLayout, BottomNavigation, SearchView, Lottie, Shimmer
       </p>
     </section>
     <!-- 이슈 -->
     <section class="issue container section-detail">
       <p>
         <h3 class="issue__subtitle">Result & Issues</h3>
-        [협업 문화]
+        [협업 방식 및 커뮤니케이션]
         <br /><br />
         - Figma, Jira, Discord, Notion 등 다양한 협업 툴을 활용해 커뮤니케이션 및 작업
         <br /><br />
-        - iOS와 협업: 권장 디자인에 어쩌구 하기위해, 플랫폼 별 차이 이해 , 뭘 했더라라 (컴포넌트처럼 만들기)
-        <br /><br />
-        - 워크스루를 통해 개선 (spf)
+        - iOS 개발자와의 협업: 플랫폼 권장 디자인 가이드를 고려해 Android와 iOS 간 UI/UX 차이를 이해하고, 일관된 사용자 경험을 제공
         <br /><br />
         [담당 기능 및 기술]
         <br /><br />
-        - Kakao SDK를 활용해 로그인 (OAuth 방식에서 -> grant 어쩌구로 개선하여 보안 강화화)
+        - 스플래시, 로그인, 회원가입, 홈화면, 방생성 등 주요 기능을 구현함
+        <br /><br /> 
+        - 스플래시 화면에 lottie 애니메이션을 도입
         <br /><br />
-        - 스플래시 화면에 lottie 애니메이션 도입
+        - Kakao SDK를 활용해 로그인 기능 구현
         <br /><br />
-        - MVVM 패턴에 Hilt 의존성 주입 사용
+        - 커스텀 팝업(Modal), 커스텀 DatePicker 구현현
         <br /><br />
-        - 방 생성 및 방 참여 기능 
-        <br /><br />
-        - 온보딩 화면 (학교 인증)
+        - MVVM 패턴을 기반으로 한 RestAPI 통신 및 RoomDB, SharedPreference를 통한 캐싱 구현
         <br /><br />
         [지속적인 개선]
         <br /><br />
-        - coroutine으로 닉네임 방이름 중복체크 (api 호출 최소화)      
+        - 아이디 중복 확인을 사용자 입력 시마다 요청하던 방식에서 Corutine과 Debounce 방식으로 1초마다 요청하도록 개선
+        → API 요청을 약 70% 감소하여 서버 리소스 보호      
         <br /><br />
-        - 홈 화면 개선 및 복잡한 ui를 구현하기 위해 컴포넌트화
+        - 단순 버튼 중심이던 기존 홈화면 → 사용자 중심 콘텐츠(추천 사용자/방 컴포넌트)로 개편해 초기 몰입도를 높이고자 함
         <br /><br />
-        - ux 개선을 위한 새로고침 화면 도입 (동적으로 반영하기 위함)
-        <br /><br />
-        - 꼼꼼한 오류 처리 (중복 검사, 네트워크 오류 등등)
-        <br /><br />
-        - ..을 개선하기 위해 스플래시 화면에서 자동 로그인
-        <br /><br />
-        - 자동 업데이트 구현
+        - Skeleton UI와 스와이프 새로고침 기능을 도입해 UX를 개선함
         <br /><br />
       </p>
     </section>
